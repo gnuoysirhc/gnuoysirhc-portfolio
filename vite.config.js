@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve, dirname } from "node:path";
-import { cpSync, existsSync, readdirSync } from "node:fs";
+import { cpSync, existsSync, readdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const rootDir = dirname(fileURLToPath(import.meta.url));
@@ -20,6 +20,10 @@ function copyImages() {
       if (existsSync(from)) {
         cpSync(from, to, { recursive: true });
       }
+      writeFileSync(
+        resolve(rootDir, "dist/.gitkeep"),
+        "# Keep dist in git so Wrangler assets.directory exists before Vite runs.\n",
+      );
     },
   };
 }
