@@ -5,29 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PHL — Chris Young</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/pages/phl.css" />
   </head>
   <body class="phl">
-    <header class="site-header">
-      <a class="site-title" href="/">Chris Young</a>
-      <nav class="site-nav">
-        <a href="/">Home</a>
-        <a href="/time-war.html">Time War</a>
-        <a href="/wedding.html">Wedding</a>
-        <a href="/cc-euro.html">CC Euro</a>
-        <a href="/vision-zero.html">Vision Zero</a>
-        <a href="/streetsdot.html">Streetsdot</a>
-        <a href="/pgh.html">PGH</a>
-        <a href="/phl.html">PHL</a>
-        <a href="/page.html">Page</a>
-      </nav>
-    </header>
+    <!-- include:partials/header.html -->
     <main>
-      <div id="galleries"></div>
+      <section class="gallery-section">
+        <h1>PHL</h1>
+        <img class="display" src="/images/phl/01.svg" alt="PHL" />
+        <div class="gallery-images">
+          <img src="/images/phl/02.svg" alt="PHL 02" />
+          <img class="zoom" src="/images/phl/03.svg" alt="PHL 03" />
+          <img src="/images/phl/04.svg" alt="PHL 04" />
+        </div>
+      </section>
     </main>
     <script type="module" src="/js/nav.js"></script>
-    <script type="module" src="/js/lists/phl.js"></script>
-    <script type="module" src="/js/gallery.js"></script>
     <script type="module" src="/js/lightbox.js"></script>
   </body>
 </html>

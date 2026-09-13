@@ -1,9 +1,5 @@
-/* Optional overrides for this page only:
-   body { background-color: ...; }
-   .heading-1 {}
-   .heading-2 {}
-   .heading-3 {}
-   .subtitle {}
-   .emphasis {}
-   .paragraph-1 {}
-*/
+:root {
+  --bg: #000;
+  --ink: #fff;
+  --muted: #a3a3a3;
+}

@@ -54,12 +54,13 @@ function ensureOverlay() {
 }
 
 function modeFor(image) {
-  const zoom = image.classList.contains("zoom");
+  const zoom = image.classList.contains("zoom") || image.closest(".gallery-scroll");
   const display = image.classList.contains("display");
+  const borderless = image.classList.contains("borderless");
   if (zoom) {
     return "zoom";
   }
-  if (display) {
+  if (display || borderless) {
     return "display";
   }
   return "gallery";
@@ -83,8 +84,8 @@ function showCurrent() {
   }
 
   const applyZoom = () => {
-    imageEl.style.width = `${imageEl.naturalWidth * 2}px`;
-    imageEl.style.height = `${imageEl.naturalHeight * 2}px`;
+    imageEl.style.width = `${imageEl.naturalWidth * 1.25}px`;
+    imageEl.style.height = `${imageEl.naturalHeight * 1.25}px`;
   };
 
   if (imageEl.complete && imageEl.naturalWidth) {
@@ -151,7 +152,7 @@ export function openFromImage(image, galleryImages = []) {
 }
 
 export function bindImages(root = document) {
-  const images = [...root.querySelectorAll("img.display, img.zoom, .gallery-images img")];
+  const images = [...root.querySelectorAll("img.display, img.zoom, img.borderless, .gallery-images img, .gallery-scroll img")];
   const galleryImages = images.filter((img) => img.closest(".gallery-images"));
 
   for (const image of images) {
