@@ -4,6 +4,7 @@
   --muted: #5c5c5c;
   --line: #d8d5ce;
   --header-space: 1.25rem;
+  --container: 900px;
 }
 
 *,
@@ -41,6 +42,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.site-header,
+main {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+}
+
 .site-header {
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +80,6 @@ a:hover {
 
 main {
   padding: 2.5rem 1.5rem 4rem;
-  max-width: 1100px;
 }
 
 .heading-1 {
