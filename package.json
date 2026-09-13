@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 43123",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1 --port 43123"
+    "preview": "vite preview --host 127.0.0.1 --port 43123",
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "wrangler": "^4.131.1"
   }
 }
