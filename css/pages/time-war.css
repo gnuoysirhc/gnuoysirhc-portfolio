@@ -3,3 +3,7 @@
   --ink: #fff;
   --muted: #a3a3a3;
 }
+
+.time-war .emph {
+  font-size: 1.1rem;
+}
