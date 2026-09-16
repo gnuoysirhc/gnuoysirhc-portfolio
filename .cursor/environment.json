@@ -1,0 +1,17 @@
+{
+  "name": "gnuoysirhc-portfolio",
+  "install": "npm ci",
+  "ports": [
+    {
+      "name": "vite dev server",
+      "port": 43123
+    }
+  ],
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "npm run dev",
+      "description": "Vite dev server for the portfolio site, served at http://127.0.0.1:43123"
+    }
+  ]
+}
