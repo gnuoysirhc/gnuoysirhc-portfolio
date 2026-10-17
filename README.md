@@ -1,6 +1,6 @@
 # Chris Young
 
-Minimal HTML site for project images. Homepage and `/page.html` are blank. Each project is its own page with images in the HTML, a fade lightbox, and optional per-page CSS.
+Minimal HTML site for project images. `/page.html` is blank. Each project is its own page with images in the HTML, a fade lightbox, and optional per-page CSS.
 
 ## Run locally
 
@@ -13,7 +13,7 @@ Then open http://127.0.0.1:43123
 
 ## Pages
 
-- `/` — home (blank)
+- `/` — home, with a card preview linking to Time War
 - `/time-war.html`, `/wedding.html`, `/cc-euro.html`, `/vision-zero.html`, `/streetsdot.html`, `/pgh.html`, `/phl.html` — one project each
 - `/page.html` — blank subpage
 
