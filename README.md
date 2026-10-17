@@ -21,6 +21,19 @@ Then open http://127.0.0.1:43123
 
 - Images: drop files in `images/<project>/` and add `<img>` tags in that page’s HTML
 - Copy: headings and paragraphs in the same HTML file (`h1`, `h2`, `h3`, `p`; modifiers `.sub`, `.emph`)
+- Card preview: a row with a square cropped image on the left and a title plus subtitle on the right
+
+  ```html
+  <a class="card-preview" href="/time-war.html">
+    <img src="/images/time-war/Time War 01.jpg" alt="" />
+    <div>
+      <h2>The Time War</h2>
+      <p>Photography collection, fiction, card game</p>
+    </div>
+  </a>
+  ```
+
+  The image is cropped with `object-fit: cover`. The heading is the title; the paragraph is the muted subtitle. Stacked cards pick up space between them. Wrap the card in a link when the whole row should navigate.
 - Type and background for one page: add `css/pages/<project>.css` and link it from that page (Time War is the example)
 - Shared look: `css/styles.css`
 - Header and nav: `partials/header.html` (included on every page)
