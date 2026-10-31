@@ -13,8 +13,8 @@ Then open http://127.0.0.1:43123
 
 ## Pages
 
-- `/` — home, with a card preview linking to Time War
-- `/time-war.html`, `/wedding.html`, `/cc-euro.html`, `/vision-zero.html`, `/streetsdot.html`, `/pgh.html`, `/phl.html` — one project each
+- `/` — home, with card previews linking to Time War and Berkshires 2020
+- `/time-war.html`, `/berkshires-2020.html`, `/wedding.html`, `/cc-euro.html`, `/vision-zero.html`, `/streetsdot.html`, `/pgh.html`, `/phl.html` — one project each
 - `/page.html` — blank subpage
 
 ## Edit
@@ -36,7 +36,7 @@ Then open http://127.0.0.1:43123
   The image is cropped with `object-fit: cover`. The heading is the title; the paragraph is the muted subtitle. Stacked cards pick up space between them. Wrap the card in a link when the whole row should navigate.
 - Type and background for one page: add `css/pages/<project>.css` and link it from that page (Time War is the example)
 - Shared look: `css/styles.css`
-- Header and nav: `partials/header.html` (included on every page)
+- Header: `partials/header.html` (included on every page)
 
 Starter images are placeholders. Replace them with the real files.
 
