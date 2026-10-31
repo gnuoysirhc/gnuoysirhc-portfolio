@@ -9,21 +9,27 @@
   <body class="home">
     <!-- include:partials/header.html -->
     <main>
+      <form class="card-search" role="search">
+        <label for="card-search">Search</label>
+        <input id="card-search" type="search" autocomplete="off" />
+      </form>
+      <p class="card-search-empty" hidden>No matches.</p>
       <a class="card-preview" href="/time-war.html">
         <img src="/images/time-war/Time War 01.jpg" alt="" />
         <div>
-          <h2>Time War</h2>
+          <h2>Time War - Project</h2>
           <p>A mix photography and science fiction, warping what is normally a documentary medium through the story’s lens.</p>
         </div>
       </a>
       <a class="card-preview" href="/berkshires-2020.html">
         <img src="/images/berkshires-2020/Berkshires 2020-01.webp" alt="" />
         <div>
-          <h2>Berkshires 2020</h2>
+          <h2>Berkshires 2020 - Sketchbook</h2>
           <p>Sketchbook photos of nature.</p>
         </div>
       </a>
     </main>
     <script type="module" src="/js/lightbox.js"></script>
+    <script type="module" src="/js/home-search.js"></script>
   </body>
 </html>

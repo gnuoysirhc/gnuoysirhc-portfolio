@@ -66,6 +66,12 @@ main {
   padding: 2.5rem 1.5rem 4rem;
 }
 
+.home main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 h1 {
   margin: 2rem 0 1rem;
   font-size: 2rem;
@@ -117,6 +123,45 @@ p {
 
 .card-preview + .card-preview {
   margin-top: 1.5rem;
+}
+
+.home .card-preview + .card-preview {
+  margin-top: 0;
+}
+
+.card-search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 36rem;
+  font-size: 0.95rem;
+}
+
+.card-search label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.card-search input {
+  width: 100%;
+  margin: 0;
+  padding: 0.35rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.card-search input:focus {
+  outline: none;
+  border-bottom-color: var(--ink);
+}
+
+.card-search-empty {
+  margin: 0;
+  color: var(--muted);
 }
 
 .card-preview > img {

@@ -13,7 +13,7 @@ Then open http://127.0.0.1:43123
 
 ## Pages
 
-- `/` — home, with card previews linking to Time War and Berkshires 2020
+- `/` — home, with a search field that filters cards by title, and card previews linking to Time War and Berkshires 2020
 - `/time-war.html`, `/berkshires-2020.html`, `/wedding.html`, `/cc-euro.html`, `/vision-zero.html`, `/streetsdot.html`, `/pgh.html`, `/phl.html` — one project each
 - `/page.html` — blank subpage
 
@@ -33,7 +33,7 @@ Then open http://127.0.0.1:43123
   </a>
   ```
 
-  The image is cropped with `object-fit: cover`. The heading is the title; the paragraph is the muted subtitle. Stacked cards pick up space between them. Wrap the card in a link when the whole row should navigate.
+  The image is cropped with `object-fit: cover`. The heading is the title; the paragraph is the muted subtitle. Stacked cards pick up space between them. Wrap the card in a link when the whole row should navigate. The home search field matches that title only.
 - Type and background for one page: add `css/pages/<project>.css` and link it from that page (Time War is the example)
 - Shared look: `css/styles.css`
 - Header: `partials/header.html` (included on every page)
