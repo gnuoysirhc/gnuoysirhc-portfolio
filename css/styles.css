@@ -121,6 +121,10 @@ p {
   text-decoration: none;
 }
 
+.card-preview[hidden] {
+  display: none;
+}
+
 .card-preview + .card-preview {
   margin-top: 1.5rem;
 }
