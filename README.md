@@ -13,8 +13,8 @@ Then open http://127.0.0.1:43123
 
 ## Pages
 
-- `/` — home, with a search field that filters cards by title, and card previews linking to Time War, Berkshires 2020, Chicago 2022, and Christmas 2019
-- `/time-war.html`, `/berkshires-2020.html`, `/chicago-2022.html`, `/christmas-2019.html`, `/wedding.html`, `/cc-euro.html`, `/vision-zero.html`, `/streetsdot.html`, `/pgh.html`, `/phl.html` — one project each
+- `/` — home, with a search field that filters cards by title, and card previews linking to Time War, Berkshires 2020, Chicago 2022, Christmas 2019, Miami 2024, New Years 2019-2020, New Years 2022-2023, Virginia Beach 2021, Wilmington 2022, and Amtrak 2021
+- `/time-war.html`, `/berkshires-2020.html`, `/chicago-2022.html`, `/christmas-2019.html`, `/miami-2024.html`, `/new-years-2019-2020.html`, `/new-years-2022-2023.html`, `/virginia-beach-2021.html`, `/wilmington-2022.html`, `/amtrak-2021.html`, `/wedding.html`, `/cc-euro.html`, `/vision-zero.html`, `/streetsdot.html`, `/pgh.html`, `/phl.html` — one project each
 - `/page.html` — blank subpage
 
 ## Edit

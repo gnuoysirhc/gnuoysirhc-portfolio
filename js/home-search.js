@@ -25,4 +25,16 @@ form?.addEventListener("submit", (event) => {
   event.preventDefault();
 });
 
+const placeholder = input?.getAttribute("placeholder") ?? "";
+
+input?.addEventListener("focus", () => {
+  input.placeholder = "";
+});
+
+input?.addEventListener("blur", () => {
+  if (input.value === "") {
+    input.placeholder = placeholder;
+  }
+});
+
 input?.addEventListener("input", applyFilter);

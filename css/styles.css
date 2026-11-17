@@ -134,16 +134,8 @@ p {
 }
 
 .card-search {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
   max-width: 36rem;
   font-size: 0.95rem;
-}
-
-.card-search label {
-  font-size: 0.85rem;
-  color: var(--muted);
 }
 
 .card-search input {
@@ -158,9 +150,17 @@ p {
   font: inherit;
 }
 
+.card-search input::placeholder {
+  color: var(--muted);
+}
+
 .card-search input:focus {
   outline: none;
   border-bottom-color: var(--ink);
+}
+
+.card-search input:focus::placeholder {
+  opacity: 0;
 }
 
 .card-search-empty {
